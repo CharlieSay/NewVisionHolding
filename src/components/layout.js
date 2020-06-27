@@ -16,10 +16,15 @@ const Layout = ({ children }) => {
       <div
         style={{
           margin: `0 auto`,
-          maxWidth: 300,
+          padding: '0',
+          maxWidth: 1280,
+          height: '100vh',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems:'center'
         }}
       >
-        <main>{children}</main>
+          <main>{children}</main>
       </div>
     </>
   )

@@ -7,7 +7,6 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <div style={{ position: "absolute", top: "40%" }}>
       <div
         style={{
           display: "flex",
@@ -18,20 +17,23 @@ const IndexPage = () => (
         <div style={{ maxWidth: `300px`, paddingLeft: "4%" }}>
           <Image />
         </div>
-        <h1
+        <h2 style={{
+          color: "#FFFFFF",
+          fontFamily: "Poppins",
+textAlign:'center'
+        }}>
+          Video Content for the local church</h2>
+        <span
           style={{
-            color: "#F2F2F2",
+            color: "#FFFFFF",
             fontFamily: "Poppins",
-            marginTop: "70%",
-            fontSize: "25px",
           }}
         >
           Coming soon...
           <span role="img" aria-label="fire emoji">
             🔥
           </span>
-        </h1>
-      </div>
+        </span>
     </div>
   </Layout>
 )
