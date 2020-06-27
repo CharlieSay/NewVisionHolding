@@ -3,37 +3,40 @@ import React from "react"
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
+import './index.css';
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-      <div
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+      }}
+    >
+      <Image />
+      <h1 style={{
+        color: "#FFFFFF",
+        fontFamily: "Poppins",
+        textAlign: 'center',
+        fontSize:'35px',
+        paddingLeft:'4px',
+        paddingRight:'4px'
+      }}>
+        Video Content for the local <span className='underline'>church</span></h1>
+      <span
         style={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-        }}
-      >
-        <div style={{ maxWidth: `300px`, paddingLeft: "4%" }}>
-          <Image />
-        </div>
-        <h2 style={{
           color: "#FFFFFF",
           fontFamily: "Poppins",
-textAlign:'center'
-        }}>
-          Video Content for the local church</h2>
-        <span
-          style={{
-            color: "#FFFFFF",
-            fontFamily: "Poppins",
-          }}
-        >
-          Coming soon...
-          <span role="img" aria-label="fire emoji">
-            🔥
+        }}
+      >
+        Coming soon
+       
+      </span>
+   <span role="img" aria-label="fire emoji">
+          🔥🔥🔥🔥🔥
           </span>
-        </span>
     </div>
   </Layout>
 )
