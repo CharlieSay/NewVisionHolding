@@ -4,7 +4,7 @@ import "./signup.scss"
 class EmailListForm extends React.Component<
   {},
   { email: String; success: boolean }
-> {
+  > {
   constructor(props) {
     super(props)
     this.state = { email: "", success: false }
@@ -32,7 +32,8 @@ class EmailListForm extends React.Component<
       <div>
         {!this.state.success && (
           <form onSubmit={this.handleSubmit} className="signup">
-            <h3>Want to find out more?</h3>
+            <h4 style={{ paddingLeft: '8px', paddingRight: '8px', textAlign: 'center' }}>We're on a mission to build an incredible media library, <br></br>for the UK Church.</h4>
+            <h5 style={{ paddingLeft: '8px', paddingRight: '8px', textAlign: 'center', fontWeight: '300' }}>Register your interest by signing up to our newsletter</h5>
             <div>
               <input
                 placeholder="email@email.com"
@@ -41,8 +42,8 @@ class EmailListForm extends React.Component<
                 className="input-box"
                 onChange={this.handleEmailChange}
               />
-              <button className="nv-button" type="submit">
-                <span>Submit</span>
+              <button className="nv-button" type="submit" style={{ fontWeight: '700', fontSize: '12px' }}>
+                Submit
               </button>
             </div>
           </form>
