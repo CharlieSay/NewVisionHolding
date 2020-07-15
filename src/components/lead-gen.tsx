@@ -36,7 +36,7 @@ class EmailListForm extends React.Component<
             <h5 style={{ paddingLeft: '8px', paddingRight: '8px', textAlign: 'center', fontWeight: '300' }}>Register your interest by signing up to our newsletter</h5>
             <div>
               <input
-                placeholder="email@email.com"
+                placeholder="email"
                 name="email"
                 type="text"
                 className="input-box"
@@ -45,6 +45,7 @@ class EmailListForm extends React.Component<
               <button className="nv-button" type="submit" style={{ fontWeight: '700', fontSize: '12px' }}>
                 Submit
               </button>
+              </div>
             </div>
           </form>
         )}

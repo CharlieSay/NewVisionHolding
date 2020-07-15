@@ -17,45 +17,47 @@ textarea {
   flex-direction: column;
   align-items: center;
   font-family: "Poppins", sans-serif;
-  color: #ffffff;
-
-  h3 {
-    font-size: 33px;
-    font-weight: 200;
-    padding-left: 8px;
-    padding-right: 8px;
-    text-align: center;
-  }
-}
-
-.nv-button {
-  margin-left: 16px;
-  height: 55px;
-  width: 114px;
-  border-radius: 6px;
-  background-color: #37f49d;
-  span {
-    font-size: 20px;
-    font-weight: 200;
-  }
-  @media (max-width: 432px) {
-    height: 30px;
-    width: 60px;
-    span {
-      font-size: 14px;
-    }
-  }
+  color: white;
+  max-width: 420px;
 }
 
 .input-box {
-  height: 55px;
+  background: transparent;
+  border-bottom: 2px solid #38f39d;
+  color: white;
+  letter-spacing: 0.23px;
+  margin: 0px;
+  padding: 12px 12px 12px 2px;
+  width: 100%;
+}
+
+.nv-button {
+  border: 2px solid #38f39d;
+  margin-top: 32px;
+  box-sizing: border-box;
   border-radius: 6px;
-  width: 300px;
-  font-size: 15px;
-  padding-left: 4px;
-  padding-right: 4px;
-  @media (max-width: 432px) {
-    width: 200px;
-    height: 30px;
+  height: 35.5px;
+  width: 200px;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  transition:border 0.5s ease;
+  span {
+    color: white;
+    padding-top: 2px;
+    @media only screen and (max-width: 480px) {
+      padding-top:4px;
+    }
+
   }
+}
+
+
+.nv-button:hover {
+    cursor: pointer;
+}
+
+.button-container{
+  display:flex;
+  justify-content: center
 }
