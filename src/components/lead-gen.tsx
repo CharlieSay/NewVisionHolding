@@ -42,11 +42,10 @@ class EmailListForm extends React.Component<
                 className="input-box"
                 onChange={this.handleEmailChange}
               />
-              <button className="nv-button" type="submit" style={{ fontWeight: '700', fontSize: '12px' }}>
-                Submit
+              <button className="nv-button" type="submit">
+                <span>Submit</span>
               </button>
               </div>
-            </div>
           </form>
         )}
         {this.state.success && (
