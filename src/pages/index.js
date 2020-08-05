@@ -1,5 +1,5 @@
 import React from "react"
-
+import FadeIn from 'react-fade-in';
 import Layout from "../components/layout"
 import Image from "../components/image"
 import EmailListForm from "../components/lead-gen"
@@ -9,28 +9,30 @@ import "./index.css"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-      }}
-    >
-      <Image />
-      <h1
+    <FadeIn>
+      <div
         style={{
-          color: "#FFFFFF",
-          fontFamily: "Poppins",
-          textAlign: "center",
-          fontSize: "35px",
-          paddingLeft: "4px",
-          paddingRight: "4px",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
         }}
       >
-        Video Content for the local <span className="underline">church</span>
-      </h1>
-      <EmailListForm />
-    </div>
+        <Image />
+        <h1
+          style={{
+            color: "#FFFFFF",
+            fontFamily: "Poppins",
+            textAlign: "center",
+            fontSize: "35px",
+            paddingLeft: "4px",
+            paddingRight: "4px",
+          }}
+        >
+          Hey, we're New Vision <span role="img" aria-label="Waving Emoji">👋</span>
+        </h1>
+        <EmailListForm />
+      </div>
+    </FadeIn>
   </Layout>
 )
 

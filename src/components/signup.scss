@@ -19,6 +19,20 @@ textarea {
   font-family: "Poppins", sans-serif;
   color: white;
   max-width: 420px;
+
+  h2 {
+    margin: 0 0;
+    padding: 8px 8px;
+    text-align: center;
+    font-size: 1.5em;
+  }
+  h3 {
+    margin: 0 0 16px 0;
+    padding: 8px 8px;
+    text-align: center;
+    font-weight: 200;
+    font-size: 1em;
+  }
 }
 
 .input-box {
@@ -29,6 +43,9 @@ textarea {
   margin: 0px;
   padding: 12px 12px 12px 2px;
   width: 100%;
+  @media only screen and (max-width: 480px) {
+    width: 90vw;
+  }
   height: 35px;
 }
 
@@ -42,23 +59,32 @@ textarea {
   background: transparent;
   display: flex;
   justify-content: center;
-  transition:border 0.5s ease;
+  transition: all 0.25s ease;
+
   span {
     color: white;
     padding-top: 2px;
     @media only screen and (max-width: 480px) {
-      padding-top:4px;
+      padding-top: 4px;
     }
-
   }
 }
 
-
 .nv-button:hover {
-    cursor: pointer;
+  cursor: pointer;
+  background-color: #38f39d;
+  span {
+    color: black;
+  }
+  transition: all 0.25s ease;
 }
 
-.button-container{
-  display:flex;
-  justify-content: center
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.aligner {
+  display: flex;
+  justify-content: center;
 }

@@ -32,8 +32,8 @@ class EmailListForm extends React.Component<
       <div>
         {!this.state.success && (
           <form onSubmit={this.handleSubmit} className="signup">
-            <h4 style={{ paddingLeft: '8px', paddingRight: '8px', textAlign: 'center' }}>We're on a mission to build an incredible media library, <br></br>for the UK Church.</h4>
-            <h5 style={{ paddingLeft: '8px', paddingRight: '8px', textAlign: 'center', fontWeight: '300' }}>Register your interest by signing up to our newsletter</h5>
+            <h2>We are on a mission to build the best media library for the UK Church.</h2>
+            <h3>Let us know youre interested!</h3>
             <div>
               <input
                 placeholder="email"
@@ -42,10 +42,12 @@ class EmailListForm extends React.Component<
                 className="input-box"
                 onChange={this.handleEmailChange}
               />
-              <button className="nv-button" type="submit">
-                <span>Submit</span>
-              </button>
+              <div className="aligner">
+                <button className="nv-button" type="submit">
+                  <span>Sign up</span>
+                </button>
               </div>
+            </div>
           </form>
         )}
         {this.state.success && (
