@@ -4,7 +4,7 @@ import "./signup.scss"
 class EmailListForm extends React.Component<
   {},
   { email: String; success: boolean }
-  > {
+> {
   constructor(props) {
     super(props)
     this.state = { email: "", success: false }
@@ -29,7 +29,14 @@ class EmailListForm extends React.Component<
 
   render() {
     return (
-      <div>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          textAlign: "center",
+          flexDirection: "column",
+        }}
+      >
         {!this.state.success && (
           <form onSubmit={this.handleSubmit} className="signup">
             <h2>We are on a mission to build the best media library for the UK Church.</h2>
@@ -53,21 +60,35 @@ class EmailListForm extends React.Component<
         {this.state.success && (
           <div
             style={{
-              maxWidth: "250px",
               display: "flex",
               justifyContent: "center",
               textAlign: "center",
               flexDirection: "column",
             }}
           >
-            <span style={{ fontFamily: "Poppins", color: "white" }}>
-              Thanks for registering your interest with us!
-            </span>
-            <div>
-              <span role="img" aria-label="fire emoji">
-                🔥🔥🔥🔥🔥
-              </span>
-            </div>
+            <a
+              href="https://drive.google.com/drive/folders/1r5pEJsImqHBCxfKVZECrc49TwlSwPO5y?usp=sharing"
+              target="_blank"
+            >
+              <button
+                className="nv-button"
+                type="submit"
+                style={{ minWidth: "300px" }}
+              >
+                <span
+                  style={{
+                    fontFamily: "Poppins",
+                    color: "white",
+                    fontWeight: "500",
+                    display: "flex",
+                    textDecoration: "none",
+                  }}
+                >
+                  Claim your starter pack
+                </span>
+              </button>
+            </a>
+            <div></div>
           </div>
         )}
       </div>
