@@ -15,6 +15,8 @@ const IndexPage = () => (
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
+          paddingLeft: "8px",
+          paddingRight: "8px",
         }}
       >
         <Image />
@@ -23,14 +25,36 @@ const IndexPage = () => (
             color: "#FFFFFF",
             fontFamily: "Poppins",
             textAlign: "center",
-            fontSize: "35px",
-            paddingLeft: "4px",
-            paddingRight: "4px",
+            fontSize: "32px",
+            paddingLeft: `8px`,
+            paddingRight: `8px`,
           }}
         >
           Hey, we're New Vision <span role="img" aria-label="Waving Emoji">👋</span>
         </h1>
+        <span
+          style={{
+            color: "#FFFFFF",
+            fontFamily: "Poppins",
+            textAlign: "center",
+            fontSize: "16px",
+            paddingBottom: `16px`,
+            paddingRight: `32x`,
+          }}
+        >
+          Enter your email address to recieve your free starter bundle worth over £50
+        </span>
         <EmailListForm />
+        <a href={'//newvisionmedia.store'} target="_blank" rel="noreferrer" style={{
+          color: "#FFFFFF",
+          fontFamily: "Poppins",
+          textAlign: "center",
+          fontSize: "26px",
+          borderBottom: `2px solid #FFCE00`,
+          paddingLeft: `8px`,
+          paddingRight: `8px`,
+          textDecoration: 'none'
+        }}>View our full catalogue</a>
       </div>
     </FadeIn>
   </Layout>

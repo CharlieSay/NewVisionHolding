@@ -29,67 +29,45 @@ class EmailListForm extends React.Component<
 
   render() {
     return (
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          textAlign: "center",
-          flexDirection: "column",
-        }}
-      >
+      <div style={{paddingBottom: `32px`}}>
         {!this.state.success && (
           <form onSubmit={this.handleSubmit} className="signup">
-            <h2>We are on a mission to build the best media library for the UK Church.</h2>
-            <h3>Let us know youre interested!</h3>
             <div>
               <input
-                placeholder="email"
+                placeholder="your@email.com"
                 name="email"
                 type="text"
                 className="input-box"
                 onChange={this.handleEmailChange}
               />
-              <div className="aligner">
-                <button className="nv-button" type="submit">
-                  <span>Sign up</span>
-                </button>
-              </div>
+              <button className="nv-button" type="submit">
+                <span>Submit</span>
+              </button>
             </div>
           </form>
         )}
         {this.state.success && (
-          <div
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            textAlign: "center",
+            flexDirection: "column",
+          }}
+        >
+          <h1
             style={{
-              display: "flex",
-              justifyContent: "center",
+              color: "#FFFFFF",
+              fontFamily: "Poppins",
               textAlign: "center",
-              flexDirection: "column",
+              fontSize: "32px",
+              paddingLeft: "8px",
+              paddingRight: "8px",
             }}
           >
-            <a
-              href="https://drive.google.com/drive/folders/1r5pEJsImqHBCxfKVZECrc49TwlSwPO5y?usp=sharing"
-              target="_blank"
-            >
-              <button
-                className="nv-button"
-                type="submit"
-                style={{ minWidth: "300px" }}
-              >
-                <span
-                  style={{
-                    fontFamily: "Poppins",
-                    color: "white",
-                    fontWeight: "500",
-                    display: "flex",
-                    textDecoration: "none",
-                  }}
-                >
-                  Claim your starter pack
-                </span>
-              </button>
-            </a>
-            <div></div>
-          </div>
+            Your free bundle is on its way!
+          </h1>
+        </div>
         )}
       </div>
     )

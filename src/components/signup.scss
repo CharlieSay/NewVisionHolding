@@ -18,73 +18,33 @@ textarea {
   align-items: center;
   font-family: "Poppins", sans-serif;
   color: white;
-  max-width: 420px;
-
-  h2 {
-    margin: 0 0;
-    padding: 8px 8px;
-    text-align: center;
-    font-size: 1.5em;
-  }
-  h3 {
-    margin: 0 0 16px 0;
-    padding: 8px 8px;
-    text-align: center;
-    font-weight: 200;
-    font-size: 1em;
-  }
 }
 
 .input-box {
   background: transparent;
   border-bottom: 2px solid #38f39d;
   color: white;
-  letter-spacing: 0.23px;
-  margin: 0px;
   padding: 12px 12px 12px 2px;
-  width: 100%;
-  @media only screen and (max-width: 480px) {
-    width: 90vw;
-  }
-  height: 35px;
+  height: 38px;
+  width: 60vw;
+  max-width: 400px;
+  margin-right: 16px;
 }
 
 .nv-button {
-  border: 2px solid #38f39d;
-  margin-top: 32px;
-  box-sizing: border-box;
-  border-radius: 6px;
+  background-color: #38f39d;
+  border-radius: 4px;
   padding: 8px 16px 8px 16px;
-  min-width:250px;
-  background: transparent;
-  display: flex;
-  justify-content: center;
   transition: all 0.25s ease;
 
   span {
-    color: white;
-    padding-top: 2px;
-    @media only screen and (max-width: 480px) {
-      padding-top: 4px;
-    }
+    color: black; 
+font-weight: 500;
   }
 }
 
 .nv-button:hover {
   cursor: pointer;
-  background-color: #38f39d;
-  span {
-    color: black;
-  }
+  background-color: #2fd487;
   transition: all 0.25s ease;
-}
-
-.button-container {
-  display: flex;
-  justify-content: center;
-}
-
-.aligner {
-  display: flex;
-  justify-content: center;
 }

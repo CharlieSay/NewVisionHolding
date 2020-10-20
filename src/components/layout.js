@@ -12,21 +12,16 @@ import "./layout.css"
 
 const Layout = ({ children }) => {
   return (
-    <>
-      <div
-        style={{
-          margin: `0 auto`,
-          padding: '0',
-          maxWidth: 1280,
-          height: '100vh',
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems:'center'
-        }}
-      >
-          <main>{children}</main>
-      </div>
-    </>
+    <main style={{
+      margin: `0 auto`,
+      padding: '0',
+      height: '100vh',
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center'
+    }}>
+      {children}
+    </main>
   )
 }
 
