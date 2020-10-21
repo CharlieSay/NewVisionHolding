@@ -67,6 +67,14 @@ class EmailListForm extends React.Component<
           >
             Your free bundle is on its way!
           </h1>
+          <span style={{
+              color: "#FFFFFF",
+              fontFamily: "Poppins",
+              textAlign: "center",
+              fontSize: "12px",
+              paddingLeft: "8px",
+              paddingRight: "8px",
+            }}>Please allow up to 15 minutes for your bundle to land in your inbox!</span>
         </div>
         )}
       </div>

@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `New Vision UK`,
-    description: `The only content library with the UK Church in mind.`,
+    description: `The only content library with the Local Church in mind.`,
     author: `@newvision.uk`
   },
   plugins: [
@@ -24,7 +24,7 @@ module.exports = {
         start_url: `/`,
         background_color: `#141414`,
         theme_color: `#141414`,
-        icon: `src/images/logo512.png` // This path is relative to the root of the site.
+        icon: `src/images/logo512.png`
       }
     },
     {
@@ -36,12 +36,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "UA-180928443-2",
+        trackingId: "UA-159295663-1",
         head: true
       }
     }
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ]
 }
