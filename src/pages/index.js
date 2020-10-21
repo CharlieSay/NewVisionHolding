@@ -42,7 +42,7 @@ const IndexPage = () => (
             paddingRight: `32x`,
           }}
         >
-          Enter your email address to recieve your free starter bundle worth over £50
+          Enter your email address to recieve your free content bundle worth over £50
         </span>
         <EmailListForm />
         <a href={'//newvisionmedia.store'} target="_blank" rel="noreferrer" style={{
